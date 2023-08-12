@@ -6,8 +6,9 @@ public class Main {
         System.out.println("Este es mi primer proyecto en el nuevo computador");
 
         System.out.println("vamos a hacer una suma");
-        int suma = 5+2;
+        int num1 = 10;
+        int num2 = 15;
 
-        System.out.println(suma);
+        System.out.println(num1+num2);
     }
 }
