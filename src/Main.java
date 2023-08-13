@@ -7,7 +7,8 @@ public class Main {
         System.out.println("hola mundo" );
         System.out.println("Este es mi primer proyecto en el nuevo computador");
 
-        int num1, num2;
+        int num1 = 0;
+        int num2 = 0;
 
         System.out.println("Selecciona una operacion");
     
@@ -31,10 +32,6 @@ public class Main {
             case 3:
                 System.out.println(multiplicacion(num1, num2));
                 break;
-            case 4:
-                System.out.println(division(num1, num2));
-                break;
-        
             default:
                 System.out.println("opcion incorrecta");
                 break;
@@ -44,35 +41,17 @@ public class Main {
     }
 
     public static int suma(int num1, int num2){
-        return num1+num2;
+        return(num1+num2);
     }
 
     public static int resta(int num1, int num2){
-        return num1-num2;
+        return (num1-num2);
     }
 
     public static int multiplicacion(int num1, int num2){
-        return num1*num2;
+        return (num1*num2);
     }
 
-    public static double division(int num1, int num2){
-        return (double)num1/(double)num2;
-    }
 
-    public int suma(int num1, int num2){
-        return num1+num2;
-    }
-
-    public int resta(int num1, int num2){
-        return num1-num2;
-    }
-
-    public int multiplicacion(int num1, int num2){
-        return num1*num2;
-    }
-
-    public double division(int num1, int num2){
-        return double num1/num2;
-    }
     
 }
