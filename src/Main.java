@@ -37,7 +37,7 @@ public class Main {
                 break;
         }
 
-        System.out.println("fin del programa");
+        System.out.println("fin del programa \t FIn");
 
 
     }
