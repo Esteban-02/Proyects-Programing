@@ -1,17 +1,62 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
+
+        Scanner lectura = new Scanner(System.in);
         System.out.println("hola mundo" );
         System.out.println("Este es mi primer proyecto en el nuevo computador");
 
-        System.out.println("vamos a hacer una suma");
-        int num1 = 10;
-        int num2 = 15;
+        int num1, num2;
 
-        System.out.println(num1+num2);
+        System.out.println("Selecciona una operacion");
+    
+        System.out.println("\tSelecciona una operacion");
+        System.out.print("Escoga una opcion para la operacion: \n1. Suma\n2. Resta\n3. Multiplicacion\n4. Division\n\tDigite la seleccion:  ");
+        int opc = lectura.nextInt();
 
-        System.out.println("Selecciona una operacion")
-        sout
+        System.out.print("Ingrese primer numero: ");
+        num1 = lectura.nextInt();
 
+        System.out.print("Ingrese el segundo numero: ");
+        num2 = lectura.nextInt();
+
+        switch (opc) {
+            case 1:
+                System.out.println(suma(num1, num2));
+                break;
+            case 2:
+                System.out.println(resta(num1, num2));
+                break;
+            case 3:
+                System.out.println(multiplicacion(num1, num2));
+                break;
+            case 4:
+                System.out.println(division(num1, num2));
+                break;
+        
+            default:
+                System.out.println("opcion incorrecta");
+                break;
+        }
+
+
+    }
+
+    public static int suma(int num1, int num2){
+        return num1+num2;
+    }
+
+    public static int resta(int num1, int num2){
+        return num1-num2;
+    }
+
+    public static int multiplicacion(int num1, int num2){
+        return num1*num2;
+    }
+
+    public static double division(int num1, int num2){
+        return (double)num1/(double)num2;
     }
 
     public int suma(int num1, int num2){
@@ -26,8 +71,8 @@ public class Main {
         return num1*num2;
     }
 
-    public double division(int num1, num2){
-        return dou
+    public double division(int num1, int num2){
+        return double num1/num2;
     }
     
 }
