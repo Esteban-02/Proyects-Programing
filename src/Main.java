@@ -12,7 +12,7 @@ public class Main {
 
         System.out.println("Selecciona una operacion");
     
-        System.out.println("\tSelecciona una operacion");
+        System.out.println("\tSelecciona:");
         System.out.print("Escoga una opcion para la operacion: \n1. Suma\n2. Resta\n3. Multiplicacion\n4. Division\n\tDigite la seleccion:  ");
         int opc = lectura.nextInt();
 
