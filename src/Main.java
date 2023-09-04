@@ -16,10 +16,10 @@ public class Main {
         System.out.print("Escoga una opcion para la operacion: \n1. Suma\n2. Resta\n3. Multiplicacion\n4. Division\n\tDigite la seleccion:  ");
         int opc = lectura.nextInt();
 
-        System.out.print("1er numero: ");
+        System.out.print("Ingrese primer numero: ");
         num1 = lectura.nextInt();
 
-        System.out.print("2do numero: ");
+        System.out.print("Ingrese el segundo numero: ");
         num2 = lectura.nextInt();
 
         switch (opc) {
